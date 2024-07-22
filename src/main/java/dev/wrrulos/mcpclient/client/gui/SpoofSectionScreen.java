@@ -135,7 +135,7 @@ public class SpoofSectionScreen extends Screen {
             Text.literal("FakeIP")
         );
         this.fakeIPTextFieldWidget.setChangedListener(this::onFakeIPTextChanged);
-        this.fakeIPTextFieldWidget.setMaxLength(16);
+        this.fakeIPTextFieldWidget.setMaxLength(256);
         this.fakeIPTextFieldWidget.setText(sessionController.getCurrentFakeIP());
         this.addDrawableChild(this.fakeIPTextFieldWidget);
 
@@ -167,7 +167,7 @@ public class SpoofSectionScreen extends Screen {
             Text.literal("FakeHostname")
         );
         this.fakeHostnameTextFieldWidget.setChangedListener(this::onFakeHostnameTextChanged);
-        this.fakeHostnameTextFieldWidget.setMaxLength(16);
+        this.fakeHostnameTextFieldWidget.setMaxLength(256);
         this.fakeHostnameTextFieldWidget.setText(sessionController.getCurrentFakeHostname());
         this.addDrawableChild(this.fakeHostnameTextFieldWidget);
 
